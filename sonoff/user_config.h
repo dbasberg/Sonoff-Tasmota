@@ -29,7 +29,7 @@
 \*********************************************************************************************/
 
 // -- Localization --------------------------------
-//#define MY_LANGUAGE            en-GB           // English in Great Britain. Enabled by Default
+#define MY_LANGUAGE            en-GB           // English in Great Britain. Enabled by Default
 //#define MY_LANGUAGE            nl-NL           // Dutch in the Netherlands
 //#define MY_LANGUAGE            de-DE           // German in Germany
 //#define MY_LANGUAGE            pl-PL           // Polish in Poland
@@ -45,14 +45,14 @@
 
 // -- Wifi ----------------------------------------
 #define WIFI_IP_ADDRESS        "0.0.0.0"         // [IpAddress1] Set to 0.0.0.0 for using DHCP or IP address
-#define WIFI_GATEWAY           "192.168.2.254"   // [IpAddress2] If not using DHCP set Gateway IP address
-#define WIFI_SUBNETMASK        "255.255.255.0"   // [IpAddress3] If not using DHCP set Network mask
-#define WIFI_DNS               "192.168.2.27"    // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
+#define WIFI_GATEWAY           "10.0.0.1"   // [IpAddress2] If not using DHCP set Gateway IP address
+#define WIFI_SUBNETMASK        "255.255.0.0"   // [IpAddress3] If not using DHCP set Network mask
+#define WIFI_DNS               "10.0.0.1"    // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
 
-#define STA_SSID1              "indebuurt1"      // [Ssid1] Wifi SSID
-#define STA_PASS1              "VnsqrtnrsddbrN"  // [Password1] Wifi password
-#define STA_SSID2              "indebuurt2"      // [Ssid2] Optional alternate AP Wifi SSID
-#define STA_PASS2              "VnsqrtnrsddbrN"  // [Password2] Optional alternate AP Wifi password
+#define STA_SSID1              "WYFY55"      // [Ssid1] Wifi SSID
+#define STA_PASS1              "Aa234567@"  // [Password1] Wifi password
+#define STA_SSID2              "basberg"      // [Ssid2] Optional alternate AP Wifi SSID
+#define STA_PASS2              "12121212"  // [Password2] Optional alternate AP Wifi password
 #define WIFI_CONFIG_TOOL       WIFI_WPSCONFIG    // [WifiConfig] Default tool if wifi fails to connect
                                                  //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT)
 
@@ -78,10 +78,10 @@
   #define MQTT_USER            "cloudmqttuser"      // [MqttUser] Mandatory user
   #define MQTT_PASS            "cloudmqttpassword"  // [MqttPassword] Mandatory password
 #else
-  #define MQTT_HOST            "domus1"          // [MqttHost]
+  #define MQTT_HOST            "hassio"          // [MqttHost]
   #define MQTT_PORT            1883              // [MqttPort] MQTT port (10123 on CloudMQTT)
-  #define MQTT_USER            "DVES_USER"       // [MqttUser] Optional user
-  #define MQTT_PASS            "DVES_PASS"       // [MqttPassword] Optional password
+  #define MQTT_USER            "has"       // [MqttUser] Optional user
+  #define MQTT_PASS            "hAs"       // [MqttPassword] Optional password
 #endif
 
 #define MQTT_BUTTON_RETAIN     0                 // [ButtonRetain] Button may send retain flag (0 = off, 1 = on)
